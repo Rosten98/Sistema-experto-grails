@@ -9,3 +9,7 @@
 //= require bootstrap
 //= require popper.min
 //= require_self
+(function() {
+  var nav_link = document.getElementsByClassName('nav-link');
+  
+})();
