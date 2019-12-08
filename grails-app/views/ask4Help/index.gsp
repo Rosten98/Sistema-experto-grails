@@ -2,9 +2,9 @@
 <html>
     <head>
         <meta name="layout" content="main" />
-        <title><g:message code="default.list.label" args="[entityName]" /></title>
+        <title>Pide ayuda</title>
     </head>
     <body>
-
+      <p>Hola mundo</p>
     </body>
 </html>

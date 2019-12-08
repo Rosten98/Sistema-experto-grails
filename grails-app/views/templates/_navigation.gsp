@@ -12,8 +12,11 @@
         <li class="nav-item">
           <g:link controller="ForwardChaining" class="nav-link">Forward chaining</g:link>
         </li>
-        <li>
-          <a class="nav-link" href="#">Diccionario</a>
+        <li class="nav-item">
+          <g:link controller="Statement" class="nav-link">Diccionario</g:link>
+        </li>
+        <li class="nav-item">
+          <g:link controller="Ask4Help" class="nav-link">Pide ayuda</g:link>
         </li>
       </ul>
     </div>
