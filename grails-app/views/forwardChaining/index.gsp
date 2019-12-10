@@ -6,6 +6,7 @@
         <title><g:message code="default.list.label" args="[entityName]" /></title>
     </head>
     <body>
+        <!-- <g:set var="statement" bean="statementService" /> -->
         <a href="#list-forwardChaining" class="skip" tabindex="-1"><g:message code="default.link.skip.label" default="Skip to content&hellip;"/></a>
         <div class="nav" role="navigation">
             <ul>
@@ -24,7 +25,7 @@
                 <g:paginate total="${forwardChainingCount ?: 0}" />
             </div>
         </div>
-
+        <g:link action="create" params="[trastorno: 'TDHA']">Diagnosticar TDHA</g:link>
         <!-- <g:form name="name" action="action">
           <div class="form-check">
             <input class="form-check-input" type="radio" name="exampleRadios" id="exampleRadios1" value="option1" checked>

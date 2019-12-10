@@ -14,7 +14,6 @@ class ForwardChainingController {
     def index(Integer max) {
         params.max = Math.min(max ?: 10, 100)
         respond forwardChainingService.list(params), model:[forwardChainingCount: forwardChainingService.count()]
-        redirect(action: "create")
     }
 
     def show() {
@@ -22,6 +21,7 @@ class ForwardChainingController {
     }
 
     def create() {
+        println params
         respond new ForwardChaining(params)
     }
 
