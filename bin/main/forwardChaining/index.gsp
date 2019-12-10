@@ -6,7 +6,7 @@
         <title><g:message code="default.list.label" args="[entityName]" /></title>
     </head>
     <body>
-        <!-- <a href="#list-forwardChaining" class="skip" tabindex="-1"><g:message code="default.link.skip.label" default="Skip to content&hellip;"/></a>
+        <a href="#list-forwardChaining" class="skip" tabindex="-1"><g:message code="default.link.skip.label" default="Skip to content&hellip;"/></a>
         <div class="nav" role="navigation">
             <ul>
                 <li><a class="home" href="${createLink(uri: '/')}"><g:message code="default.home.label"/></a></li>
@@ -23,9 +23,9 @@
             <div class="pagination">
                 <g:paginate total="${forwardChainingCount ?: 0}" />
             </div>
-        </div> -->
+        </div>
 
-        <g:form name="name" action="action">
+        <!-- <g:form name="name" action="action">
           <div class="form-check">
             <input class="form-check-input" type="radio" name="exampleRadios" id="exampleRadios1" value="option1" checked>
             <label class="form-check-label" for="exampleRadios1">
@@ -38,6 +38,6 @@
               Second default radio
             </label>
           </div>
-        </g:form>
+        </g:form> -->
     </body>
 </html>

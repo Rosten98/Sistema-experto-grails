@@ -5,10 +5,12 @@ class Statement {
     String descripcion
     Tipo tipo
     static constraints = {
+      tipo display: false
     }
+
 }
 
-enum Tipo {
+public enum Tipo {
   ANTECEDENTE,
   CONSECUENTE,
   AMBOS

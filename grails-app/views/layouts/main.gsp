@@ -17,7 +17,9 @@
 <body>
   <g:render template="/templates/navigation"/>
 
-  <g:layoutBody/>
+  <div class="container">
+    <g:layoutBody/>
+  </div>
   <!-- Footer -->
   <footer class="py-5">
     <div class="container">

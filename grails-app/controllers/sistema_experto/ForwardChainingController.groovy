@@ -7,24 +7,27 @@ import analizador.*
 class ForwardChainingController {
 
     ForwardChainingService forwardChainingService
+    StatementService statementService
 
     static allowedMethods = [save: "POST", update: "PUT", delete: "DELETE"]
 
     def index(Integer max) {
         params.max = Math.min(max ?: 10, 100)
         respond forwardChainingService.list(params), model:[forwardChainingCount: forwardChainingService.count()]
+        redirect(action: "create")
     }
 
-    def show(Long id) {
+    def show() {
         respond forwardChainingService.get(id)
     }
 
     def create() {
-        new Lector()
         respond new ForwardChaining(params)
     }
 
     def save(ForwardChaining forwardChaining) {
+        new Lector()
+        println params
         if (forwardChaining == null) {
             notFound()
             return
@@ -45,6 +48,8 @@ class ForwardChainingController {
             '*' { respond forwardChaining, [status: CREATED] }
         }
     }
+
+    def resultados(){}
 
     def edit(Long id) {
         respond forwardChainingService.get(id)
