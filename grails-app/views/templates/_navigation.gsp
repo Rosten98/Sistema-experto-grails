@@ -10,7 +10,7 @@
           <a class="nav-link" href="/">Inicio</a>
         </li>
         <li class="nav-item">
-          <g:link controller="ForwardChaining" class="nav-link">Forward chaining</g:link>
+          <g:link controller="ForwardChaining" class="nav-link">Diagnósticos</g:link>
         </li>
         <li class="nav-item">
           <g:link controller="Statement" class="nav-link">Diccionario</g:link>
