@@ -31,7 +31,7 @@ class BootStrap {
       new Statement(literal: 'InmoS1s1', descripcion: 'Dificultad para iniciar el sueño', tipo: Tipo.ANTECEDENTE, tag: 'Inmo').save()
       new Statement(literal: 'InmoS1s2', descripcion: 'Dificultad para mantener el sueño (despertarse frecuentemente o problemas para volver a conciliar el sueño después de despertar)', tipo: Tipo.ANTECEDENTE, tag: 'Inmo').save()
       new Statement(literal: 'InmoS1s3', descripcion: 'Despertar pronto por la mañana con incapacidad para volver a dormir', tipo: Tipo.ANTECEDENTE, tag: 'Inmo').save()
-      new Statement(literal: 'InmoS2', descripcion: 'La alteración del sueño causa malestar clínicamente significativo o deterioro en lo social, laboral, educativo, académico, del comportamiento u otras áreas importantes del funcionamiento', tipo: Tipo.ANTECEDENTE, tag: 'Inmo').save()
+      new Statement(literal: 'InmoS2', descripcion: 'La alteración del sueño causa malestar clínicamente significativo o deterioro en lo social, laboral, educativo, académico, del comportamiento entre otras', tipo: Tipo.ANTECEDENTE, tag: 'Inmo').save()
       new Statement(literal: 'InmoS3', descripcion: 'La dificultad del sueño se produce al menos tres noches a la semana ', tipo: Tipo.ANTECEDENTE, tag: 'Inmo').save()
       new Statement(literal: 'InmoS4', descripcion: 'La dificultad del sueño está presente durante un mínimo de tres meses. ', tipo: Tipo.ANTECEDENTE, tag: 'Inmo').save()
       new Statement(literal: 'InmoS5', descripcion: 'La dificultad del sueño se produce a pesar de las condiciones favorables para dormir', tipo: Tipo.ANTECEDENTE, tag: 'Inmo').save()
@@ -45,7 +45,7 @@ class BootStrap {
       new Statement(literal: 'TicsS5', descripcion: 'Los tics son producto de alguna sustancia o otra afección medica', tipo: Tipo.ANTECEDENTE, tag: 'Tics').save()
 
       new Statement(literal: 'Hiper', descripcion: 'Trastorno de hipersomnia', tipo: Tipo.CONSECUENTE, tag: 'Hiper').save()
-      new Statement(literal: 'HiperS1', descripcion: 'El individuo refiere somnolencia excesiva (hipersomnia) a pesar de haber dormido durante un período principal que dura al menos siete horas, con uno o más de los síntomas siguientes', tipo: Tipo.AMBOS, tag: 'Hiper').save()
+      new Statement(literal: 'HiperS1', descripcion: 'El individuo refiere somnolencia excesiva (hipersomnia) a pesar de haber dormido durante un período principal que dura al menos siete horas', tipo: Tipo.AMBOS, tag: 'Hiper').save()
       new Statement(literal: 'HiperS1s1', descripcion: 'Tiene períodos recurrentes de sueño o de caerse de sueño en el mismo día', tipo: Tipo.ANTECEDENTE, tag: 'Hiper').save()
       new Statement(literal: 'HiperS1s2', descripcion: 'Descansa más de nueve horas diarias y no es reparador', tipo: Tipo.ANTECEDENTE, tag: 'Hiper').save()
       new Statement(literal: 'HiperS1s3', descripcion: 'Tiene dificultad para estar totalmente despierto después de despertar bruscamente', tipo: Tipo.ANTECEDENTE, tag: 'Hiper').save()
@@ -54,7 +54,7 @@ class BootStrap {
       new Statement(literal: 'HiperS4', descripcion: 'Esto es producto de una sustancia o otra afección medica', tipo: Tipo.ANTECEDENTE, tag: 'Hiper').save()
 
       new Statement(literal: 'Con', descripcion: 'Trastorno de conducta', tipo: Tipo.CONSECUENTE, tag: 'Con').save()
-      new Statement(literal: 'ConS1', descripcion: 'Un patrón repetitivo y persistente de comportamiento en el que no se respetan los derechos básicos de otros, las normas o reglas sociales propias de la edad, lo que se manifiesta por la presencia en los doce últimos meses de por lo menos tres de los quince criterios siguientes', tipo: Tipo.AMBOS, tag: 'Con').save()
+      new Statement(literal: 'ConS1', descripcion: 'Un patrón repetitivo y persistente de comportamiento en el que no se respetan los derechos básicos de otros, las normas o reglas sociales propias de la edad', tipo: Tipo.AMBOS, tag: 'Con').save()
       new Statement(literal: 'ConS1s1', descripcion: 'A menudo acosa, amenaza o intimada a otros', tipo: Tipo.ANTECEDENTE, tag: 'Con').save()
       new Statement(literal: 'ConS1s2', descripcion: 'A menudo inicia peleas', tipo: Tipo.ANTECEDENTE, tag: 'Con').save()
       new Statement(literal: 'ConS1s3', descripcion: 'Ha usado un arma que puede provocar serios daños a terceros ', tipo: Tipo.ANTECEDENTE, tag: 'Con').save()
