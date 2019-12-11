@@ -15,6 +15,10 @@ class StatementService {
     //
     // Statement save(Statement statement)
 
+    List<Statement> list(){
+        Statement.findAll()
+    }
+
     List<Statement> listByTag(String tag){
       Statement.findAllWhere(tipo: Tipo.ANTECEDENTE, tag: tag)
     }

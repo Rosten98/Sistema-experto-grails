@@ -11,7 +11,8 @@ class StatementController {
 
     def index(Integer max) {
         params.max = Math.min(max ?: 10, 100)
-        respond statementService.list(params), model:[statementCount: statementService.count()]
+        // respond statementService.list(params), model:[statementCount: statementService.count()]
+        respond statementService.list()
     }
 
     def show(Long id) {
