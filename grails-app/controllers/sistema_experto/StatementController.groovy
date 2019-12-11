@@ -16,7 +16,7 @@ class StatementController {
     }
 
     def show(Long id) {
-        respond statementService.get(id)
+        respond Statement.get(id)
     }
 
     protected void notFound() {
