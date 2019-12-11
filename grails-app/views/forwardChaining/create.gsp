@@ -6,6 +6,11 @@
         <title><g:message code="default.create.label" args="[entityName]" /></title>
     </head>
     <body>
+        <div class="nav" role="navigation">
+            <ul>
+                <li><g:link class="list" action="index">Regresar a los diagnosticos</g:link></li>
+            </ul>
+        </div>
         <h1>Diagnóstico de ${params.trastorno}</h1>
         <hr>
         <br>

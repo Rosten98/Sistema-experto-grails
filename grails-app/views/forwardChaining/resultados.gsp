@@ -6,6 +6,10 @@
         <title>Resultados</title>
     </head>
     <body>
-        
+      <div class="nav" role="navigation">
+          <ul>
+              <li><g:link class="list" action="index">Regresar al diccionario</g:link></li>
+          </ul>
+      </div>
     </body>
 </html>
