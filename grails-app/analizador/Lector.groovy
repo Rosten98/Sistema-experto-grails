@@ -17,17 +17,17 @@ public class Lector {
 	public String linea;
 	// public String formulas = "";
 
-	public Lector(){
+	public Lector(String hechos){
 		auto_analizador = new Automata();
 		atomosGeneral = new ArrayList<>();
 		atomosFinal = new ArrayList<>();
 		arboles = new ArrayList<>();
 
-		main();
+		main(hechos);
 	}
 
 
-	public void main(){
+	public void main(String hechos){
 		/*
 			1- Lectura de archivo
 			2- Analizador
@@ -42,7 +42,7 @@ public class Lector {
 		// 6- Crear reglas
 		crearReglas = new CreadorReglas(arboles);
 		// 7- ForwardChaining
-		forwardChaining = new ForwardChaining(crearReglas.obtenerReglas());
+		forwardChaining = new ForwardChaining(crearReglas.obtenerReglas(), hechos);
 		// 8- BackwardChaining
 		// backwardChaining = new BackwardChaining(crearReglas.obtenerReglas());
 	}

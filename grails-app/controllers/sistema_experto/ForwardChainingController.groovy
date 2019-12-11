@@ -25,74 +25,23 @@ class ForwardChainingController {
     }
 
     def save(ForwardChaining forwardChaining) {
-        new Lector()
-        println params
+        String hechos = "";
+        ArrayList<String> hechosList = new ArrayList<>();
+        Lector lector;
+
+        for (key in params.keySet()) {
+          if(params.get(key) == 'SI'){
+            hechos += ',' + key
+            hechosList.add(key)
+          }
+        }
+        lector = new Lector(hechos.substring(1))
+        println "Hechos recolectados: ${hechosList}"
+        println "Hechos inferidos   : ${lector.forwardChaining.getHechos()}"
         redirect (action: "resultados")
-        // if (forwardChaining == null) {
-        //     notFound()
-        //     return
-        // }
-        //
-        // try {
-        //     forwardChainingService.save(forwardChaining)
-        // } catch (ValidationException e) {
-        //     respond forwardChaining.errors, view:'create'
-        //     return
-        // }
-        //
-        // request.withFormat {
-        //     form multipartForm {
-        //         flash.message = message(code: 'default.created.message', args: [message(code: 'forwardChaining.label', default: 'ForwardChaining'), forwardChaining.id])
-        //         redirect forwardChaining
-        //     }
-        //     '*' { respond forwardChaining, [status: CREATED] }
-        // }
     }
 
     def resultados(){}
-
-    // def edit(Long id) {
-    //     respond forwardChainingService.get(id)
-    // }
-    //
-    // def update(ForwardChaining forwardChaining) {
-    //     if (forwardChaining == null) {
-    //         notFound()
-    //         return
-    //     }
-    //
-    //     try {
-    //         forwardChainingService.save(forwardChaining)
-    //     } catch (ValidationException e) {
-    //         respond forwardChaining.errors, view:'edit'
-    //         return
-    //     }
-    //
-    //     request.withFormat {
-    //         form multipartForm {
-    //             flash.message = message(code: 'default.updated.message', args: [message(code: 'forwardChaining.label', default: 'ForwardChaining'), forwardChaining.id])
-    //             redirect forwardChaining
-    //         }
-    //         '*'{ respond forwardChaining, [status: OK] }
-    //     }
-    // }
-    //
-    // def delete(Long id) {
-    //     if (id == null) {
-    //         notFound()
-    //         return
-    //     }
-    //
-    //     forwardChainingService.delete(id)
-    //
-    //     request.withFormat {
-    //         form multipartForm {
-    //             flash.message = message(code: 'default.deleted.message', args: [message(code: 'forwardChaining.label', default: 'ForwardChaining'), id])
-    //             redirect action:"index", method:"GET"
-    //         }
-    //         '*'{ render status: NO_CONTENT }
-    //     }
-    // }
 
     protected void notFound() {
         request.withFormat {

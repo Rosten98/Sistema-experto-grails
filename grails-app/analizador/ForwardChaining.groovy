@@ -10,31 +10,19 @@ public class ForwardChaining{
 	public ArrayList<Regla> conocimientoRelevante;
 	public StringTokenizer hechosTokens;
 
-	public ForwardChaining(ArrayList<Regla> reglas){
+	public ForwardChaining(ArrayList<Regla> reglas, String hechosInput){
 		hechos = new ArrayList<>();
 		conocimientoRelevante = reglas;
-
-		// System.out.println("ForwardChaining: ");
-		// for(int i = 0; i < conocimientoRelevante.size(); i++){
-		// 	System.out.println(i + " " + conocimientoRelevante.get(i).getRegla());
-		// }
-		main();
+		main(hechosInput);
 	}
 
-	public void main(){
-		// System.out.println("\n--------------------------------------------------------------\n");
-		// System.out.println("FORWARD CHAINING\n");
+	public void main(String hechosRecibidos){
 
-		// Verificar lo que se ingresa, que no pueda ingresar cualquier cosa como hecho, solo atomos y que estos atomos no se repitan y que no este vacio
-		// Scanner input  = new Scanner(System.in);
-		// System.out.println("Ingresa los hechos separados por una coma");
-		// hechosInput = input.nextLine();
-
-		hechosInput = "I1,I2,I3,I4,I5,H1,H2,H3,H4,H5"
+		hechosInput = hechosRecibidos
 		guardarHechos();
 		inferir();
 
-		System.out.println(hechos);
+		// System.out.println(hechos);
 	}
 
 	public void guardarHechos(){
@@ -44,6 +32,10 @@ public class ForwardChaining{
 			hechos.add(hechosTokens.nextToken());
 		}
 		cardinalidad = hechos.size();
+	}
+
+	public ArrayList<String> getHechos(){
+		return this.hechos
 	}
 
 	public void inferir(){
