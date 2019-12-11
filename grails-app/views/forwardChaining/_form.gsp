@@ -1,5 +1,7 @@
 <g:set var="statement" bean="statementService"/>
 
+<h3>Pequeña descripción sobre el desarrollo de la encuesta</h3>
+<br>
 <g:form class="form-group" name="test" action="save">
   <g:each in="${statement.listByTag(params.trastorno)}" var="question">
   <p>¿${question.descripcion}?</p>
