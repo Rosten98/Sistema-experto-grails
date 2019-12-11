@@ -18,7 +18,7 @@ public class CreadorReglas{
 			crearReglas();
 		}
 
-		imprimirReglas();
+		// imprimirReglas();
 	}
 
 	public void tomarLiterales(Arbol arbol){

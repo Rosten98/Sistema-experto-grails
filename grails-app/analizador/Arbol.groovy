@@ -166,7 +166,7 @@ public class Arbol {
     public void inorden(){
         if(izquierda != null)
             izquierda.inorden();
-        System.out.print(nodo + " ");
+        // System.out.print(nodo + " ");
         if(derecha != null)
             derecha.inorden();
     }
@@ -176,11 +176,11 @@ public class Arbol {
             izquierda.postorden();
         if(derecha != null)
             derecha.postorden();
-        System.out.print(nodo + " ");
+        // System.out.print(nodo + " ");
     }
 
     public void preorden(){
-        System.out.print(nodo + " ");
+        // System.out.print(nodo + " ");
         if(izquierda != null)
             izquierda.preorden();
         if(derecha != null)

@@ -13,23 +13,23 @@ public class FormaNC {
 
 	public void main(ArrayList<Arbol> arboles){
 		for(int i = 0; i < arboles.size(); i++) {
-			System.out.println("\nDoble implicacion:");
+			// System.out.println("\nDoble implicacion:");
 			dobleImplicacion(arboles.get(i));
 			arboles.get(i).inorden();
 
-			System.out.println("\nImplicacion:");
+			// System.out.println("\nImplicacion:");
 			implicacion(arboles.get(i));
 			arboles.get(i).inorden();
 
-			System.out.println("\nNegacion:");
+			// System.out.println("\nNegacion:");
 			negaciones(arboles.get(i));
 			arboles.get(i).inorden();
 
-			System.out.println("\nDistribucion:");
+			// System.out.println("\nDistribucion:");
 			distribucion(arboles.get(i));
 			arboles.get(i).inorden();
 
-			System.out.println("\n");
+			// System.out.println("\n");
 		}
 	}
 

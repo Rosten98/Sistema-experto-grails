@@ -18,7 +18,6 @@ public class Lector {
 	// public String formulas = "";
 
 	public Lector(){
-		println "!HOLA MUNDO!"
 		auto_analizador = new Automata();
 		atomosGeneral = new ArrayList<>();
 		atomosFinal = new ArrayList<>();
@@ -65,7 +64,7 @@ public class Lector {
 				auto_analizador.main(linea, indice);
 				atomosGeneral = auto_analizador.getAtomos();
 
-				System.out.println(linea);
+				// System.out.println(linea);
 				generarListaArboles(linea);
 
 				agregarAtomos();
@@ -92,9 +91,9 @@ public class Lector {
 		arbol = new Arbol(cadena);
 		arboles.add(arbol);
 
-		System.out.println("Arbol inorden");
+		// System.out.println("Arbol inorden");
 		arbol.inorden();
-		System.out.println("");
+		// System.out.println("");
 	}
 
 	// Agrega los atomos a un arraylist y revisa que no haya repeticiones

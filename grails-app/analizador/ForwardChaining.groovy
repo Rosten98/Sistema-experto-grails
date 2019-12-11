@@ -22,8 +22,8 @@ public class ForwardChaining{
 	}
 
 	public void main(){
-		System.out.println("\n--------------------------------------------------------------\n");
-		System.out.println("FORWARD CHAINING\n");
+		// System.out.println("\n--------------------------------------------------------------\n");
+		// System.out.println("FORWARD CHAINING\n");
 
 		// Verificar lo que se ingresa, que no pueda ingresar cualquier cosa como hecho, solo atomos y que estos atomos no se repitan y que no este vacio
 		// Scanner input  = new Scanner(System.in);
@@ -70,7 +70,7 @@ public class ForwardChaining{
 						hechos.add(inferencia);
 						cardinalidad = hechos.size();
 						conocimientoRelevante.remove(i);
-						System.out.println(hechos);
+						// System.out.println(hechos);
 						// System.out.println("Se ha inferido: " + inferencia + "\n¿Desea continuar? (Y/N)");
 						//
 						// Scanner input  = new Scanner(System.in);
