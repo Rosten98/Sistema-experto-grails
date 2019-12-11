@@ -25,6 +25,17 @@ class BootStrap {
       new Statement(literal: 'H7', descripcion: 'Con frecuencia responde inesperadamente o antes de que se haya concluido una pregunta', tipo: Tipo.ANTECEDENTE, tag: 'TDHA').save()
       new Statement(literal: 'H8', descripcion: 'Con frecuencia le es difícil esperar su turno', tipo: Tipo.ANTECEDENTE, tag: 'TDHA').save()
       new Statement(literal: 'H9', descripcion: 'Con frecuencia interrumpe o se inmiscuye con otros', tipo: Tipo.ANTECEDENTE, tag: 'TDHA').save()
+
+      new Statement(literal: 'Inmo', descripcion: 'Trastorno de insomio', tipo: Tipo.CONSECUENTE, tag: 'Inmo').save()
+      new Statement(literal: 'InmoS1', descripcion: 'Insatisfacción por la cantidad o la calidad del sueño', tipo: Tipo.AMBOS, tag: 'Inmo').save()
+      new Statement(literal: 'InmoS1s1', descripcion: 'Dificultad para iniciar el sueño', tipo: Tipo.ANTECEDENTE, tag: 'Inmo').save()
+      new Statement(literal: 'InmoS1s2', descripcion: 'Dificultad para mantener el sueño (despertarse frecuentemente o problemas para volver a conciliar el sueño después de despertar)', tipo: Tipo.ANTECEDENTE, tag: 'Inmo').save()
+      new Statement(literal: 'InmoS1s3', descripcion: 'Despertar pronto por la mañana con incapacidad para volver a dormir', tipo: Tipo.ANTECEDENTE, tag: 'Inmo').save()
+      new Statement(literal: 'InmoS2', descripcion: 'La alteración del sueño causa malestar clínicamente significativo o deterioro en lo social, laboral, educativo, académico, del comportamiento u otras áreas importantes del funcionamiento', tipo: Tipo.ANTECEDENTE, tag: 'Inmo').save()
+      new Statement(literal: 'InmoS3', descripcion: 'La dificultad del sueño se produce al menos tres noches a la semana ', tipo: Tipo.ANTECEDENTE, tag: 'Inmo').save()
+      new Statement(literal: 'InmoS4', descripcion: 'La dificultad del sueño está presente durante un mínimo de tres meses. ', tipo: Tipo.ANTECEDENTE, tag: 'Inmo').save()
+      new Statement(literal: 'InmoS5', descripcion: 'La dificultad del sueño se produce a pesar de las condiciones favorables para dormir', tipo: Tipo.ANTECEDENTE, tag: 'Inmo').save()
+      new Statement(literal: 'InmoS6', descripcion: 'El insomnio no se puede atribuir a los efectos fisiológicos de una sustancia ', tipo: Tipo.ANTECEDENTE, tag: 'Inmo').save()
     }
     def destroy = {
     }

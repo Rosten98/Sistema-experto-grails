@@ -26,6 +26,8 @@
             </div>
         </div>
         <g:link action="create" params="[trastorno: 'TDHA']">Diagnosticar TDHA</g:link>
+        <br>
+        <g:link action="create" params="[trastorno: 'Inmo']">Diagnosticar Insomnio</g:link>
         <!-- <g:form name="name" action="action">
           <div class="form-check">
             <input class="form-check-input" type="radio" name="exampleRadios" id="exampleRadios1" value="option1" checked>

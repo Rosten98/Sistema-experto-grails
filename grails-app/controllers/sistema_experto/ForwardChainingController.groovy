@@ -21,13 +21,11 @@ class ForwardChainingController {
     }
 
     def create() {
-        println params
         respond new ForwardChaining(params)
     }
 
     def save(ForwardChaining forwardChaining) {
         new Lector()
-        println params
         if (forwardChaining == null) {
             notFound()
             return
