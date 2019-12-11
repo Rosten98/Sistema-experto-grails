@@ -35,5 +35,44 @@
             </div>
           </div>
         </div>
+        <div class="row">
+          <div class="mb-5 col-12">
+            <div class="card h-100">
+              <div class="card-body">
+                <h2 class="card-title">Diagnostico de Tics</h2>
+                <p class="card-text">Descripción sobre la prueba e información util antes de contestar</p>
+              </div>
+              <div class="card-footer">
+                <g:link class="btn btn-primary btn-sm" action="create" controller="forwardChaining" params="[trastorno: 'Tics']">Comenzar prueba</g:link>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="row">
+          <div class="mb-5 col-12">
+            <div class="card h-100">
+              <div class="card-body">
+                <h2 class="card-title">Diagnostico de Hipersomnia</h2>
+                <p class="card-text">Descripción sobre la prueba e información util antes de contestar</p>
+              </div>
+              <div class="card-footer">
+                <g:link class="btn btn-primary btn-sm" action="create" controller="forwardChaining" params="[trastorno: 'Hiper']">Comenzar prueba</g:link>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="row">
+          <div class="mb-5 col-12">
+            <div class="card h-100">
+              <div class="card-body">
+                <h2 class="card-title">Diagnostico de trastorno conductual</h2>
+                <p class="card-text">Descripción sobre la prueba e información util antes de contestar</p>
+              </div>
+              <div class="card-footer">
+                <g:link class="btn btn-primary btn-sm" action="create" controller="forwardChaining" params="[trastorno: 'Con']">Comenzar prueba</g:link>
+              </div>
+            </div>
+          </div>
+        </div>
     </body>
 </html>

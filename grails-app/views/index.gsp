@@ -39,7 +39,9 @@
         <div class="card h-100">
           <div class="card-body">
             <h2 class="card-title">¿Tienes TDHA?</h2>
-            <p class="card-text">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Rem magni quas ex numquam, maxime minus quam molestias corporis quod, ea minima accusamus.</p>
+            <p class="card-text">¿Qué es? Se trata de un trastorno de carácter neurobiológico originado en la infancia que implica un patrón
+de déficit de atención, hiperactividad y/o impulsividad, y que en muchas ocasiones está asociado
+con otros trastornos comórbidos.</p>
           </div>
           <div class="card-footer">
             <g:link class="btn btn-primary btn-sm" action="create" controller="forwardChaining" params="[trastorno: 'TDHA']">Comenzar prueba</g:link>
@@ -51,7 +53,7 @@
         <div class="card h-100">
           <div class="card-body">
             <h2 class="card-title">¿Tienes Insomnio</h2>
-            <p class="card-text">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quod tenetur ex natus at dolorem enim! Nesciunt pariatur voluptatem sunt quam eaque, vel, non in id dolore voluptates quos eligendi labore.</p>
+            <p class="card-text">El insomnio o la agripnia es un trastorno que consiste en la incapacidad para conciliar el sueño o permanecer dormido. En los pacientes que lo sufren, la duración y la calidad del sueño son bajas e interfiere en su vida cotidiana. Este trastorno se manifiesta con una dificultad para iniciar el sueño, para mantenerlo o mediante un despertar final adelantado.</p>
           </div>
           <div class="card-footer">
             <g:link class="btn btn-primary btn-sm" action="create" controller="forwardChaining" params="[trastorno: 'Inmo']">Comenzar prueba</g:link>
@@ -62,19 +64,41 @@
       <div class="col-md-4 mb-5">
         <div class="card h-100">
           <div class="card-body">
-            <h2 class="card-title">Card Three</h2>
-            <p class="card-text">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Rem magni quas ex numquam, maxime minus quam molestias corporis quod, ea minima accusamus.</p>
+            <h2 class="card-title">¿Tienes algún Tic?</h2>
+            <p class="card-text">Los tics son contracciones nerviosas involuntarias que puede implicar cualquier grupo de músculos voluntarios. Los tics pueden ser parcialmente controlados, por lo general por corta duración durante la cual la persona hace un gran esfuerzo para controlarlos.</p>
           </div>
           <div class="card-footer">
-            <a href="#" class="btn btn-primary btn-sm">More Info</a>
+            <g:link class="btn btn-primary btn-sm" action="create" controller="forwardChaining" params="[trastorno: 'Tics']">Comenzar prueba</g:link>
           </div>
         </div>
       </div>
       <!-- /.col-md-4 -->
-
     </div>
     <!-- /.row -->
-
+    <div class="row">
+      <div class="col-md-6">
+        <div class="card h-100">
+          <div class="card-body">
+            <h2 class="card-title">¿Tienes trastorno de hipersomnia?</h2>
+            <p class="card-text">La hipersomnia idiopática (HI) es un trastorno del sueño en el que la persona está excesivamente somnolienta (hipersomnia) durante el día y tiene una gran dificultad para despertar del sueño. La HI es similar a la narcolepsia en el hecho de que usted siente un sueño extremo.</p>
+          </div>
+          <div class="card-footer">
+            <g:link class="btn btn-primary btn-sm" action="create" controller="forwardChaining" params="[trastorno: 'Hiper']">Comenzar prueba</g:link>
+          </div>
+        </div>
+      </div>
+      <div class="col-md-6">
+        <div class="card h-100">
+          <div class="card-body">
+            <h2 class="card-title">¿Tienes trastorno de conducta?</h2>
+            <p class="card-text">Un trastorno de conducta es una serie de problemas conductuales y emocionales que se presentan en niños y adolescentes. Los problemas pueden involucrar comportamiento desafiante o impulsivo, consumo de drogas o actividad delictiva.</p>
+          </div>
+          <div class="card-footer">
+            <g:link class="btn btn-primary btn-sm" action="create" controller="forwardChaining" params="[trastorno: 'Con']">Comenzar prueba</g:link>
+          </div>
+        </div>
+      </div>
+    </div>
   </div>
   <!-- /.container -->
 </body>
